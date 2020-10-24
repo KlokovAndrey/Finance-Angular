@@ -1,0 +1,30 @@
+import { Component, OnInit } from '@angular/core';
+import { KeycloakProfile } from 'keycloak-js';
+import { KeycloakService } from 'keycloak-angular';
+import { AfterViewInit, ElementRef, ViewChild } from '@angular/core';
+declare var google: any;
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent implements OnInit {
+  userDetails: KeycloakProfile = null;
+
+  
+  
+
+  constructor(private keycloakService: KeycloakService) {}
+
+  async ngOnInit() {
+      if (await this.keycloakService.isLoggedIn()) {
+      this.userDetails = await this.keycloakService.loadUserProfile();
+    }
+  }
+
+  async doLogout() {
+    await this.keycloakService.logout();
+    
+  }
+}

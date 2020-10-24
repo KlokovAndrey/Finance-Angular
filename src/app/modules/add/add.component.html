@@ -1,0 +1,31 @@
+<br><br><br><br><br>
+<div class="form">
+    <br>
+    <div class="form-group">
+        <input type="number" id="option" placeholder="сумма"
+         autocomplete="off" #option [(ngModel)]="sum">
+        <br><br><br>
+        <select #option required [(ngModel)]="category" >
+            <option disabled>Выберите категорию</option>
+            <option selected value="еда">еда</option>
+            <option value="учеба">учеба</option>
+            <option value="развлечения">развлечения</option>
+            <option value="медицина">медицина</option>
+            <option value="бытовые товары">бытовые товары</option>
+            <option value="подарки">подарки</option>
+        </select>
+    </div>
+    <br><br><br>
+    <div>
+        <textarea placeholder="комментарий" #option [(ngModel)]="comment"></textarea>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        
+        <button class="btn btn-default" (click)="add()">Добавить</button>
+    </div>
+    <br><br>
+
+</div>

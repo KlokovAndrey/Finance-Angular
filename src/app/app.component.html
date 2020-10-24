@@ -1,0 +1,19 @@
+<body class="back">
+    <div class="v">
+        &nbsp; <a class="up" [routerLink]="['main']">Главная</a> 
+        &nbsp; <a class="up" [routerLink]="['/add']">Добавление</a>
+     </div>
+    <ng-container *ngIf="this.userDetails!=null">
+        <div class="t">
+        <label>{{this.userDetails.username}}</label>
+        <button class="btn btn-default" (click)="doLogout()">Log out</button>
+        </div>
+    </ng-container>
+</body>
+
+
+<router-outlet></router-outlet>
+
+
+<!-- style="float: left; width: 250px; height: 50px; position: absolute;" -->
+<!-- style="float: right; width: 120px; height: 50px; position: absolute; left: 90%;" -->

@@ -1,0 +1,71 @@
+html {
+    height: 100%; /* Высота страницы */    
+    margin: 0;
+    padding: 0; 
+   }
+
+button {
+    background-color: #5F9EA0;
+    border: none;
+    color: white;
+    padding: 7px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+}
+
+body.back{
+    margin: 0;
+    padding: 0;
+    background-color: #7FFFD4;
+    background-size: cover;
+}
+
+div.v {
+    float: left;
+}
+
+div.t {
+    position: relative;
+    left: 75%;
+}
+
+
+
+
+label {
+    border: none;
+    color: black;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    
+}   
+
+
+a.up {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+
+
+ul {
+    position: relative;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: .2rem 0rem;
+    margin-bottom: .5rem;
+    justify-content: space-between;
+    width: 150px;
+    background-color: #ffffff; 
+    text-align: center;
+    color: #111111; /*цвет шрифта в обычном состоянии*/
+    font-size: 10px; /* Размер шрифта*/
+    font-family: Tahoma; /* Стиль шрифта*/
+    margin-left: 85%;
+    display: inline-block;
+}

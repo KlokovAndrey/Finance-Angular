@@ -1,0 +1,30 @@
+<br><br><br>
+<div [hidden]="!chart">
+    <canvas id="canvas" width="3%">{{chart}}</canvas>
+</div>
+
+<br><br><br>
+
+<div class="back">
+    <div class="button">
+        <input class="add" type="button"  value="+" onClick='location.href="/add"'>
+    </div>
+    <ng-container *ngIf="this.entries==null">нет записей</ng-container>
+    <ng-container *ngIf="this.entries!=null">
+        <hr>
+        <ng-container *ngFor="let entry of this.entries">
+            <b><div><div class="category">{{entry.category}}</div> 
+                 <div class="sum">{{entry.sum}} руб </div></div></b> 
+                 <br>
+                 <br>
+                 <div class="comment">{{entry.comment}}</div> 
+                  <div class = "date">{{entry.date  | date: 'H:mm d.MM.yy'}}</div>
+            <br>
+            <hr>
+        </ng-container>
+    </ng-container>
+</div>
+<br><br><br>
+
+
+
