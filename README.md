@@ -1,7 +1,10 @@
 # Finance-Angular
 Angular appilcation working with RESTfull service.
+
 Application organizes adding, access and visual representation records of user spending.
+
 The records are presented as a list sorted by date and as a chart by category.
+
 Access is limited using Keycloak.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20.
